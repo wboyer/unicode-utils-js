@@ -1,5 +1,5 @@
 #demo-container {
-  font-size: 12px;
+  font-size: 13px;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1;
   color: black;
@@ -14,9 +14,11 @@
 #character-input {
   font-size: 18px;
   width: 20em;
+  margin: 8px 8px 0 8px;
 
   @media (max-width: 767px) {
-    width: 8em;
+    width: 9em;
+    margin: 2px 2px 0 2px;
   }
 }
 
@@ -25,6 +27,7 @@
   vertical-align: bottom;
   overflow: scroll;
   width: 24em;
+  margin-left: 8px;
 
   @media (max-width: 767px) {
     width: 12em;
@@ -35,17 +38,29 @@
   display: inline-block;
   vertical-align: bottom;
   margin-top: 1em;
+
+  @media (max-width: 767px) {
+    margin-top: 10px;
+  }
 }
 
 #output-breakdown-scroll {
   overflow: scroll;
   margin-top: 1em;
+
+  @media (max-width: 767px) {
+    margin-top: 10px;
+  }
 }
 
 #output-breakdown {
   margin-top: 0.5em;
   height: 15em;
   overflow: hidden;
+
+  @media (max-width: 767px) {
+    margin-top: 4px;
+  }
 }
 
 #sequences {

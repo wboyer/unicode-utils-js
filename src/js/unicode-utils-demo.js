@@ -22,7 +22,7 @@ define(function ()
                 break;
         }
 
-        for (var i in bytes) {
+        for (var i = 0; i < bytes.length; i++) {
             var byte = bytes[i];
 
             var significantBits = 6;
@@ -248,8 +248,8 @@ define(function ()
             $("#demo").html(' \
                     <div id="demo-container"> \
                         <div id="character-entry"> \
-                            <strong>Input</strong>: <input id="character-input" type="text"  placeholder="type some emojis!"> \
-                            <input id="character-checkbox" type="checkbox">Numeric</input> \
+                            <strong>Input</strong>: <input id="character-input" type="text" placeholder="type some emojis!"> \
+                            <input id="character-checkbox" type="checkbox"> Numeric</input> \
                         </div> \
                         <div id="output-echo"> \
                             <strong>Echo</strong>: <div id="output-echo-scroll" /> \
