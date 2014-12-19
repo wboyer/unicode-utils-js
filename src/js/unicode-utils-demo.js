@@ -275,8 +275,14 @@ define(function ()
                     self.analyzeString(uu, input, $('#output-echo-scroll'), $('#output-breakdown'));
             }
 
-            $("#character-input").bind("change input keyup", analyzeInput);
-            $("#character-checkbox").bind("change input keyup", analyzeInput);
+            $("#character-input").bind("change input blur", analyzeInput);
+            $("#character-checkbox").bind("change input blur", analyzeInput);
+
+            $("#character-input").bind("keyup", function (event)
+            {
+                if (event.which == 13)
+                    analyzeInput();
+            });
         }
     };
 });
