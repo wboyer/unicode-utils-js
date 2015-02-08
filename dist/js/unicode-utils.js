@@ -53,8 +53,8 @@ define(function ()
         {
             var pad = 0x10000;
 
-            if (code >= pad)
-                pad = pad << 1;
+            while (code >= pad)
+                pad = pad << 4;
             code += pad;
 
             return prefix + code.toString(16).substr(1).toUpperCase();
