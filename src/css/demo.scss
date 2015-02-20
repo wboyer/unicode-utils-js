@@ -26,11 +26,11 @@
   display: inline-block;
   vertical-align: bottom;
   overflow: scroll;
-  width: 24em;
+  width: 48em;
   margin-left: 8px;
 
   @media (max-width: 767px) {
-    width: 12em;
+    width: 24em;
   }
 }
 
@@ -38,6 +38,7 @@
   display: inline-block;
   vertical-align: bottom;
   margin-top: 1em;
+  line-height: 1.5em;
 
   @media (max-width: 767px) {
     margin-top: 10px;
